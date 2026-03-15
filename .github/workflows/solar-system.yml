@@ -76,7 +76,7 @@ jobs:
         with:
           registry: ghcr.io
           username: "smurugan07101988-cmd"
-          password: ""
+          password: ${{ secrets.password }}
       
       - uses: docker/build-push-action@v6
         with:
