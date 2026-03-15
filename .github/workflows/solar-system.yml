@@ -75,13 +75,13 @@ jobs:
       - uses: docker/login-action@v4
         with:
           registry: ghcr.io
-          username: ${{ vars.githubUsername }}
+          username: ${{ vars.GITHUBUSERNAME }}
           password: ${{ secrets.password }}
       
       - uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ghcr.io/${{ vars.githubUsername }}/solar-system:{githubSHA}
+          tags: ghcr.io/${{ vars.GITHUBUSERNAME }}/solar-system:{githubSHA}
 
 
 
