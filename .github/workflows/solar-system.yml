@@ -82,7 +82,7 @@ jobs:
       - uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ghcr.io/smurugan07101988-cmd/solar-system:{githubSHA}
+          tags: 'ghcr.io/smurugan07101988-cmd/solar-system:${{ github.sha }}'
 
 
 
