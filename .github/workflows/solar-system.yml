@@ -68,6 +68,8 @@ jobs:
           retention-days: 5
   
   docker:
+    permissions: 
+      packages: write
     name: docker
     runs-on: ubuntu-latest
     steps:
